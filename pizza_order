@@ -11,39 +11,43 @@ small_size = 15
 medium_size = 20
 large_size = 25
 
-if small_size == 'Y':
+if size == 'S':
   if add_pepperoni == 'Y':
     small_size += 2
     if extra_cheese == 'Y':
       print(small_size + 1)
     else:
-      print(small_size + 2)
+      print(f'Your final bill is ${small_size}')
   elif add_pepperoni == 'N':
     if extra_cheese == 'N':
-      print(small_size + 1)
+      print(f'Your final bill is ${small_size}')
     else:
-      print(f'Your total bill is ${small_size}')
-elif medium_size == 'Y':
+      print(small_size + 1)
+elif size == 'M':
   if add_pepperoni == 'Y':
     medium_size += 3
     if extra_cheese == 'Y':
       print(medium_size + 1)
     else:
-      print(medium_size + 3)
+      print(f'Your final bill is ${medium_size}')
   elif add_pepperoni == 'N':
     if extra_cheese == 'N':
-      print(medium_size + 3)
+      print(f'Your final bill is ${medium_size}')
     else:
-      print(f'Your total bill is ${medium_size}')
-elif large_size == 'Y':
+      print(medium_size + 1)
+elif size == 'L':
   if add_pepperoni == 'Y':
     large_size += 3
     if extra_cheese == 'Y':
       print(large_size + 1)
     else:
-      print(large_size + 3)
+      print(f'Your final bill is ${large_size}')
   elif add_pepperoni == 'N':
     if extra_cheese == 'N':
-      print(f'Your total bill is ${large_size}')
+      print(f'Your final bill is ${large_size}')
     else:
       print(large_size  + 1)
+
+
+
+
